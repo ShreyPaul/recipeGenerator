@@ -1,6 +1,9 @@
 import openai
 import os
 from flask import Flask, render_template_string, request
+from dotenv import load_dotenv
+
+load_dotenv()
 
 openai.api_key = os.environ['OPENAI_API_KEY']
 
